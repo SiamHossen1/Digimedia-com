@@ -1,0 +1,210 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color-primary: #4DA6E7;  
+}
+.btn{
+    color: var(--color-primary);
+    background-color: white;
+    border: 1px solid var(--color-primary);
+    border-radius: 1.5rem;
+    padding: .6rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
+    transition: .2s;
+}
+/* Header Contact Section Start  */
+.header-contact{
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EFEFEF;
+    align-items: center; 
+}
+.contact-info{
+    display: flex;
+}
+.contact-info p{
+    margin-right: 3rem;
+    color: #c7c5c5;
+}
+.contact-info p i{
+    margin-right: .5rem;
+}
+.social-links i{
+    margin-right: .5rem;
+    background-color: rgb(179, 179, 179);
+    padding: .5rem .6rem;
+    border-radius: 50%;
+    color: white;
+}
+.contact-info p:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+.social-links i:hover{
+        background-color: var(--color-primary);
+        cursor: pointer;
+}
+/* Header Contact Section Ends  */
+
+/* Navbar Section Start */
+
+header{
+    padding: 1.5rem 9%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.header > a{
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+.header > a span{
+    color: #726AE3;
+}
+.header nav a{
+    margin-right: 2rem;
+    color: rgb(48, 48, 48);
+    font-weight: 600;
+}
+.header nav a:hover{
+    color: var(--color-primary);
+}
+
+/* Navbar Section End */
+
+/* Home Section Start */
+.home{
+    height: 100vh;
+    background-image: url(images/slider-left-dec.jpg), url(images/slider-right-dec.jpg);
+    background-repeat: no-repeat;
+    background-position: left,center;
+    padding: 2rem 9%;
+    background-color: #FDFDFD;
+    display: flex;
+    align-items: center;
+}
+.home .home-content h6{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.home .home-content h2{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.home .home-content p{
+    color: #bdbbbb;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+.home-picture img{
+    padding-top: 2rem;
+}
+
+/* Home Section End */
+
+/* About Section Start */
+
+.about{
+    height: 100vh;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-content{
+    padding: 0 1rem;
+}
+.about .about-content h6{
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.about .about-content h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: .8rem 0;
+}
+.about .about-content > p{
+    color: #bdbbbb;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+.track{
+    stroke: lightgray;
+    fill: none;
+    stroke-width: 5;
+}
+.progress{
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 5;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 70;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+.progress2{
+    fill: none;
+    stroke: #736BE3;
+    stroke-width: 5;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 115;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+.animation-color{
+    stroke: #F58B57;
+}
+.circle-container{
+    display: flex;
+}
+.circle1,.circle2,.circle3{
+    position: relative;
+}
+.circle1 div p{
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.circle2 div p,.circle3 div p{
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.circle1 div p span,.circle2 div p span,.circle3 div p span{
+    color: #d3d1d1;
+    font-weight: 100;
+}
+/* About Section End */
